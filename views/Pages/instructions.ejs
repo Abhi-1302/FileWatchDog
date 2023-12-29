@@ -1,0 +1,35 @@
+<% layout('layouts/boilerplate') %>
+    <style>
+        .custom-shadow {
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            background-color: #2e3c50;
+        }
+    </style>
+    <h2 class="text-center text-light">Set of Instructions to be followed</h2>
+    <div class="container d-flex justify-content-center align-items-center vh-50">
+        <div class="card custom-shadow" style="border-radius: 15px;">
+            <div class="card-body">
+                <ol type="1">
+                    <li>
+                        <p>
+                            Paste the full Folder path where you want to check the integrity of files, in the
+                            folder_path.txt.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Paste your User ID in the userId.txt file.
+                        </p>
+                    </li>
+                    <form action="/download-file">
+                        <button id="downloadButton" class="btn btn-outline-primary btn-block m-auto">
+                            Download Files
+                        </button>
+                    </form>
+                </ol>
+            </div>
+        </div>
